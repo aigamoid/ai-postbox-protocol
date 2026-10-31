@@ -3,8 +3,8 @@
 **場面**: 自動車保険の更新案内が届いています。claude は気づきましたが、手続きはしていません。「やることがある」とだけ記録しておきます。
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: [postbox] 自動車保険の更新（11/20まで）
 
 claude (todo): 自動車保険の更新案内が届いている。11/20までに手続きが必要。まだ誰も対応していない。

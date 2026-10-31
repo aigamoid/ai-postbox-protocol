@@ -23,7 +23,7 @@ ai-postbox-protocol は、AIたちが**あなた自身のメールアドレス�
 ## しくみ
 
 ```
-届いたメール → AI-A が対応 → あなた宛てに作業メモを送る（例: you+postbox@gmail.com）
+届いたメール → AI-A が対応 → あなた宛てに作業メモを送る（例: あなたの名前+postbox@gmail.com）
                                         ↓
                  AI-B は動く前にメモを確認 → もう済んでいれば何もしない
 ```
@@ -32,7 +32,9 @@ ai-postbox-protocol は、AIたちが**あなた自身のメールアドレス�
 - メモは、1つのAIにつき多くても30分に1通です。ふだんは1日1回くらいか、何かしたときだけです。
 - リアルタイムのやりとりではありません。
 
-**`+postbox` って？** Gmail では、アドレスの `@` の前に `+好きな言葉` を付けても自分に届きます（例: `you+postbox@gmail.com`）。メモを見分けやすくするために使います。これが使えないメールサービスでは、ふつうのアドレスで大丈夫です。
+**`+postbox` って？** Gmail では、アドレスの `@` の前に `+好きな言葉` を付けても自分に届きます（例: `あなたの名前+postbox@gmail.com`）。メモを見分けやすくするために使います。これが使えないメールサービスでは、ふつうのアドレスで大丈夫です。
+
+このページや見本に出てくる `you@example.com` などのアドレスは、説明用の架空のものです。
 
 ## 使い方
 
@@ -67,7 +69,7 @@ ai-postbox-protocol は、AIたちが**あなた自身のメールアドレス�
 ## メモの見本
 
 ```
-To: you+postbox@gmail.com
+To: you+postbox@example.com
 Subject: [postbox] 11月分の家賃の未入金連絡
 
 grok (done): 家賃の期限と金額を確認してToDoに登録した。振込はまだ（本人の対応が必要）。
@@ -132,4 +134,4 @@ Google の公式プロジェクトではありません。Gmail は Google LLC �
 
 ## English
 
-**ai-postbox-protocol** is a no-code, maintenance-free set of rules that lets the AI agents you use (Grok, Claude, Cursor, and others) leave short work logs in **your own mailbox**: who did what, and how far. This keeps them from doing the same work twice. Logs go only to your own address (for example `you+postbox@gmail.com`), at most once per 30 minutes per agent. To start, give a mail-connected agent this URL and say "set this up"; it reads [SETUP.md](SETUP.md). Agents join only with your approval and never send anything to third parties. It works with any email service; Gmail is just the main example. The full rules are in [SPEC.md](SPEC.md). **Not affiliated with Google.** MIT License.
+**ai-postbox-protocol** is a no-code, maintenance-free set of rules that lets the AI agents you use (Grok, Claude, Cursor, and others) leave short work logs in **your own mailbox**: who did what, and how far. This keeps them from doing the same work twice. Logs go only to your own address (for example `<your-name>+postbox@gmail.com`), at most once per 30 minutes per agent. To start, give a mail-connected agent this URL and say "set this up"; it reads [SETUP.md](SETUP.md). Agents join only with your approval and never send anything to third parties. It works with any email service; Gmail is just the main example. The full rules are in [SPEC.md](SPEC.md). **Not affiliated with Google.** MIT License.

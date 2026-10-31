@@ -20,7 +20,7 @@ AI agents that one person uses (for example Grok, Claude, Cursor, aside) write s
 |---|---|
 | **Owner** | The person who owns the mailbox. |
 | **Owner address** | The address of the mailbox the agent is connected to, plus any send-as aliases the agent's mail tool shows. |
-| **Log address** | Where logs are sent. Recommended: `<local>+postbox@<domain>` (for example `you+postbox@gmail.com`). If plus addressing does not work, the owner address itself. |
+| **Log address** | Where logs are sent. Recommended: `<local>+postbox@<domain>` (for example `you+postbox@example.com`). If plus addressing does not work, the owner address itself. All addresses in this repository's examples are placeholders. |
 | **Log** | An email that meets §4 (valid log). |
 | **Case** | One matter, such as "November rent". Identified by `case-id`. |
 | **Agent name** | The short name of a participating agent, such as `grok`. |

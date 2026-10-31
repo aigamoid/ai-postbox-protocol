@@ -3,8 +3,8 @@
 **場面**: 管理会社から「11月分の家賃が未入金です」というメールが届きました。grok が期限と金額を確認して、ToDoに登録しました。振込はあなた本人がする必要があるので、まだ残っています。
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: [postbox] 11月分の家賃の未入金連絡
 
 grok (done): 家賃の期限と金額を確認してToDoに登録した。振込はまだ（本人の対応が必要）。

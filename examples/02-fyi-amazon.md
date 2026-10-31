@@ -3,8 +3,8 @@
 **場面**: Amazon から発送の連絡が届きました。aside が気づいて、配達予定日をカレンダーに入れました。ほかにやることはありません。
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: [postbox] Amazonの荷物（11/3着予定）
 
 aside (fyi): Amazonの発送連絡に気づいた。11/3の配達予定をカレンダーに入れた。

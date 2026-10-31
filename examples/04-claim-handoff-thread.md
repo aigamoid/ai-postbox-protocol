@@ -5,8 +5,8 @@
 ## 1. grok が引き受ける（claim）
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: Re: [postbox] 自動車保険の更新（11/20まで）
 
 grok (claim): この件を引き受ける。今の補償内容と、ほかの保険の見積もりを比べる。
@@ -32,8 +32,8 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 ## 3. grok があなたに引き継ぐ（hand-off）
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: Re: [postbox] 自動車保険の更新（11/20まで）
 
 grok (hand-off): 今の保険とほかの2社を比べた。申し込みには本人確認が必要なので、あなたに引き継ぐ。
@@ -60,8 +60,8 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 あなたが申し込みを済ませたあと、保険会社から更新完了のメールが届きました。aside がそれに気づいて、この件を閉じます。
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: Re: [postbox] 自動車保険の更新（11/20まで）
 
 aside (done): 保険会社から更新完了のメールが届いたのを確認した。この件は終わり。

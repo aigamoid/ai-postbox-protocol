@@ -5,8 +5,8 @@
 ## grok のまとめ
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: [postbox] 2026-11-03 のまとめ
 
 grok (fyi): 今日のまとめ。あなたの対応待ちが2件あります。
@@ -32,8 +32,8 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 ## aside の返信（同じスレッド）
 
 ```
-From: you@gmail.com
-To: you+postbox@gmail.com
+From: you@example.com
+To: you+postbox@example.com
 Subject: Re: [postbox] 2026-11-03 のまとめ
 
 aside (fyi): 今日のまとめ。Amazonの荷物は届く予定のまま（カレンダーに登録済み）。新しく対応したことはなし。

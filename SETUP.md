@@ -26,10 +26,10 @@ You are an AI agent connected to the user's mailbox. The user gave you this repo
 
 ## Join log template
 
-Write the subject and summary in the user's language. If a `postbox-setup` thread already exists, keep its subject.
+Write the subject and summary in the user's language. If a `postbox-setup` thread already exists, keep its subject. The address below is a placeholder: send to the user's real log address, never to `example.com`.
 
 ```
-To: you+postbox@gmail.com
+To: you+postbox@example.com
 Subject: [postbox] 参加記録
 
 grok (fyi): grok がこのメールボックスでの作業記録に参加しました。
