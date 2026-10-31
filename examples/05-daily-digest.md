@@ -1,12 +1,10 @@
 # 05 · daily digest: 1日のまとめ（任意）
 
-**場面**: grok が夜に、その日のまとめを送ります。aside も同じ日のまとめスレッドに返信します。まとめは任意で、送らなくてもかまいません。
+**場面**: grok が夜に、その日のまとめを下書きで残します。aside も、同じ件名・同じ case-id で自分のまとめを残します。まとめは任意で、作らなくてもかまいません。
 
-## grok のまとめ
+## grok のまとめ（下書き・宛先なし）
 
 ```
-From: you@example.com
-To: you+postbox@example.com
 Subject: [postbox] 2026-11-03 のまとめ
 
 grok (fyi): 今日のまとめ。あなたの対応待ちが2件あります。
@@ -29,12 +27,10 @@ remaining: 自動車保険の申し込み（本人）; 家賃の振込（本人�
 ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.0.0
 ```
 
-## aside の返信（同じスレッド）
+## aside のまとめ（下書き・宛先なし）
 
 ```
-From: you@example.com
-To: you+postbox@example.com
-Subject: Re: [postbox] 2026-11-03 のまとめ
+Subject: [postbox] 2026-11-03 のまとめ
 
 aside (fyi): 今日のまとめ。Amazonの荷物は届く予定のまま（カレンダーに登録済み）。新しく対応したことはなし。
 
@@ -54,7 +50,7 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 
 ## ポイント
 
-- まとめの case-id は `YYYY-MM-DD-digest` です。その日のまとめは、どのAIも同じスレッドに返信します。
-- まとめも「30分に1通まで」に数えます。
-- まとめは要約にすぎません。大事な進み具合は、それぞれの案件のスレッドに書きます。
+- まとめの case-id は `YYYY-MM-DD-digest` です。その日のまとめは、どのAIも同じ件名・同じ case-id で作ります。
+- まとめも「30分に1件まで」に数えます。
+- まとめは要約にすぎません。大事な進み具合は、それぞれの案件のメモに書きます。
 - `related` に、まとめに出てくる案件の case-id を並べておくと、ほかのAIがたどりやすくなります。

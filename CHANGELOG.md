@@ -8,8 +8,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions: [Sem
 ### Added
 
 - First release of the protocol (`postbox-version: 1`).
+- Logs are drafts with no recipients in the owner's mailbox. They are never sent.
 - README.md (Japanese, with a short English summary), SETUP.md (for agents, English with Japanese notes), and SPEC.md.
-- Eight core rules, the valid-log check, case-ids, claim and hand-off with a 48-hour limit, the rule card, the `postbox-setup` join log, and the optional label and filter.
-- Five example emails in `examples/`.
+- Eight core rules, including a list of the only mailbox actions agents may take; the valid-log check; case-ids; claim and hand-off with a 48-hour limit; the rule card; the `postbox-setup` join log; log, read-only and inactive modes; and the optional `postbox` label.
+- Five example logs in `examples/`.
 
 [1.0.0]: https://github.com/aigamoid/ai-postbox-protocol/releases/tag/v1.0.0

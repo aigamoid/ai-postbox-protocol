@@ -2,9 +2,9 @@
 
 **場面**: Amazon から発送の連絡が届きました。aside が気づいて、配達予定日をカレンダーに入れました。ほかにやることはありません。
 
+aside が作る下書き（宛先なし）:
+
 ```
-From: you@example.com
-To: you+postbox@example.com
 Subject: [postbox] Amazonの荷物（11/3着予定）
 
 aside (fyi): Amazonの発送連絡に気づいた。11/3の配達予定をカレンダーに入れた。
@@ -29,5 +29,6 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 ## ポイント
 
 - お知らせなので `type: fyi`、やることが残っていないので `status: closed` です。
+- Amazon のメールへの「返信」としては作りません。返信にすると、宛先に Amazon が入ってしまうからです。必ず新しい下書きにします。
 - あとで claude が同じ発送メールを見つけても、このメモを見れば「もうカレンダーに入っている」とわかるので、予定を二重に入れません。
 - 住所や注文の細かい内容は書きません。

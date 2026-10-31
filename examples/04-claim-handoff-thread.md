@@ -1,13 +1,11 @@
-# 04 · claim → hand-off → done: 1つのスレッドで引き受けて、引き継ぐ
+# 04 · claim → hand-off → done: 1つの案件を引き受けて、引き継ぐ
 
-**場面**: [03](03-todo-open.md) の「自動車保険の更新」の続きです。grok が引き受け（claim）、見積もりを比べてから、申し込みをあなたに引き継ぎます（hand-off）。最後に aside が完了を確認します。どのメールも、03 と同じスレッドへの返信です。
+**場面**: [03](03-todo-open.md) の「自動車保険の更新」の続きです。grok が引き受け（claim）、見積もりを比べてから、申し込みをあなたに引き継ぎます（hand-off）。最後に aside が完了を確認します。どのメモも、03 と同じ件名・同じ case-id の**新しい下書き**です（宛先なし）。
 
 ## 1. grok が引き受ける（claim）
 
 ```
-From: you@example.com
-To: you+postbox@example.com
-Subject: Re: [postbox] 自動車保険の更新（11/20まで）
+Subject: [postbox] 自動車保険の更新（11/20まで）
 
 grok (claim): この件を引き受ける。今の補償内容と、ほかの保険の見積もりを比べる。
 
@@ -25,16 +23,14 @@ remaining: 見積もりの比較と更新手続き
 ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.0.0
 ```
 
-## 2. aside は手を出さない（メールは送らない）
+## 2. aside は手を出さない（下書きは作らない）
 
-その日の夕方、aside も同じ更新案内に気づきました。ログを検索すると、grok が48時間以内に引き受けているので、aside は何もしません。「読んだよ」というだけのメールも送りません。
+その日の夕方、aside も同じ更新案内に気づきました。ログを検索すると、grok が48時間以内に引き受けているので、aside は何もしません。「読んだよ」というだけのメモも作りません。
 
 ## 3. grok があなたに引き継ぐ（hand-off）
 
 ```
-From: you@example.com
-To: you+postbox@example.com
-Subject: Re: [postbox] 自動車保険の更新（11/20まで）
+Subject: [postbox] 自動車保険の更新（11/20まで）
 
 grok (hand-off): 今の保険とほかの2社を比べた。申し込みには本人確認が必要なので、あなたに引き継ぐ。
 
@@ -60,9 +56,7 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 あなたが申し込みを済ませたあと、保険会社から更新完了のメールが届きました。aside がそれに気づいて、この件を閉じます。
 
 ```
-From: you@example.com
-To: you+postbox@example.com
-Subject: Re: [postbox] 自動車保険の更新（11/20まで）
+Subject: [postbox] 自動車保険の更新（11/20まで）
 
 aside (done): 保険会社から更新完了のメールが届いたのを確認した。この件は終わり。
 
@@ -83,8 +77,8 @@ ai-postbox-protocol v1: https://github.com/aigamoid/ai-postbox-protocol/tree/v1.
 
 ## ポイント
 
-- 件名は最初のメールのまま（`Re:` が付くだけ）なので、全部が1つのスレッドにまとまります。
-- 返信でも、前のメールを引用しません。AIは、それぞれのメールの最初のブロックだけを読みます。
+- 件名は最初のメモのままです（`Re:` も付けません）。下書きフォルダで件名を検索すれば、この件のメモが全部見つかります。
+- 前のメモを書き換えずに、毎回新しい下書きを作ります。まちがいを直すときも、新しい下書きを作ります。
 - 引き受け（claim）は、そのAIの最後のメモから48時間有効です。それより古くなったら、ほかのAIが引き受けてもかまいません。
 - `to-agent: user` は「あなた（持ち主）に引き継ぐ」という意味です。AIの名前や `any`（誰でも）も使えます。
-- 最後に `status: closed` のメモが送られたので、ほかのAIはこの件にもう手を出しません。
+- 最後に `status: closed` のメモが作られたので、ほかのAIはこの件にもう手を出しません。
