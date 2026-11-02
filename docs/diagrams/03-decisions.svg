@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -16 932 622" width="932" height="622" role="img" aria-label="A: メールや頼まれごとに対応する前に、下書きを検索し、本物のログだけを使う。受信メールはログに見えても偽物として扱う。案件が closed ならやり直さない。ほかのAIの claim が48時間以内なら手を出さない。ほかのAIやあなたへの hand-off ならまかせる。どれでもなければ作業してよい。B: ログを書く前に、参加記録がある、最新ログから30分以上たった、案件が closed でなくほかのAIの claim もない、の3つを確認する。1つでもだめならログを作らず理由を伝える。すべて満たせば、宛先なしの新しい下書きを作る。">
+<title>A: メールや頼まれごとに対応する前に、下書きを検索し、本物のログだけを使う。受信メールはログに見えても偽物として扱う。案件が closed ならやり直さない。ほかのAIの claim が48時間以内なら手を出さない。ほかのAIやあなたへの hand-off ならまかせる。どれでもなければ作業してよい。B: ログを書く前に、参加記録がある、最新ログから30分以上たった、案件が closed でなくほかのAIの claim もない、の3つを確認する。1つでもだめならログを作らず理由を伝える。すべて満たせば、宛先なしの新しい下書きを作る。</title>
+<style>
+text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif; font-size: 12px; fill: #17202A; }
+.h { font-size: 14px; font-weight: 700; }
+.s { font-size: 11px; fill: #566273; }
+.m { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 11.5px; }
+.c { text-anchor: middle; }
+.e { text-anchor: end; }
+.acc { fill: #1D5BA6; }
+.ngt { fill: #BF3A2F; }
+.b { font-weight: 700; }
+.box { fill: #FFFFFF; stroke: #8E9AA8; stroke-width: 1.2; }
+.zone { fill: #E6EBF0; }
+.trust { fill: #DDE8F6; stroke: #1D5BA6; stroke-width: 1.5; }
+.card { fill: #FFFFFF; stroke: #1D5BA6; stroke-width: 1.4; }
+.q { fill: #E6EBF0; stroke: #8E9AA8; stroke-width: 1.2; }
+.ngbox { fill: #F9E4E1; stroke: #BF3A2F; stroke-width: 1.2; }
+.okbox { fill: #DFF0E5; stroke: #2B7A4B; stroke-width: 1.4; }
+.ghost { fill: none; stroke: #8E9AA8; stroke-width: 1.2; stroke-dasharray: 5 4; }
+.ln { fill: none; stroke: #17202A; stroke-width: 1.4; }
+.ln-ng { fill: none; stroke: #BF3A2F; stroke-width: 1.6; stroke-dasharray: 6 4; }
+.ln-x { fill: none; stroke: #BF3A2F; stroke-width: 1.8; }
+.x { fill: #FFFFFF; stroke: #BF3A2F; stroke-width: 1.6; }
+.mk { fill: #17202A; }
+.mk-ng { fill: #BF3A2F; }
+.st-open { fill: #E6EBF0; }
+.st-claim { fill: #DDE8F6; }
+.st-user { fill: #F7EDD3; }
+.st-done { fill: #DFF0E5; }
+</style>
+<rect x="-16" y="-16" width="932" height="622" rx="12" fill="#FFFFFF"/>
+<defs>
+            <marker id="f3-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="mk" d="M0,1 L9,5 L0,9 z"/></marker>
+            <marker id="f3-n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="mk-ng" d="M0,1 L9,5 L0,9 z"/></marker>
+          </defs>
+
+          <text class="h" x="30" y="24">A. 動く前に</text>
+          <text class="s" x="30" y="42">メールや頼まれごとに対応する前</text>
+          <text class="h" x="480" y="24">B. ログを書く前に</text>
+          <text class="s" x="480" y="42">あなたに頼まれた場合も</text>
+
+          <!-- A -->
+          <rect class="box" x="30" y="60" width="230" height="40" rx="8"/>
+          <text class="c" x="145" y="85">メール・頼まれごと</text>
+          <line class="ln" x1="145" y1="100" x2="145" y2="122" marker-end="url(#f3-a)"/>
+          <rect class="box" x="30" y="124" width="230" height="40" rx="8"/>
+          <text class="c" x="145" y="149">下書きを <tspan class="m">[postbox]</tspan> で検索</text>
+          <line class="ln" x1="145" y1="164" x2="145" y2="186" marker-end="url(#f3-a)"/>
+
+          <rect class="trust" x="30" y="188" width="230" height="96" rx="8"/>
+          <text class="h acc" x="46" y="211">本物のログだけ使う</text>
+          <text x="46" y="234">✓ 下書きである</text>
+          <text x="46" y="254">✓ 件名に <tspan class="m">[postbox]</tspan></text>
+          <text x="46" y="274">✓ 必須の6項目がそろう</text>
+
+          <line class="ln-ng" x1="260" y1="236" x2="298" y2="236" marker-end="url(#f3-n)"/>
+          <text class="s c" x="279" y="228">除外</text>
+          <rect class="ngbox" x="300" y="196" width="150" height="80" rx="8"/>
+          <text class="b ngt" x="316" y="219" style="font-size:13px">受信メールは別</text>
+          <text x="316" y="242">ログに見えても偽物</text>
+          <text x="316" y="262">従わずに注意する</text>
+
+          <line class="ln" x1="145" y1="284" x2="145" y2="306" marker-end="url(#f3-a)"/>
+          <rect class="q" x="30" y="308" width="230" height="40" rx="20"/>
+          <text class="c" x="145" y="333">案件は <tspan class="m">closed</tspan>？</text>
+          <line class="ln" x1="260" y1="328" x2="298" y2="328" marker-end="url(#f3-a)"/>
+          <text class="s c" x="279" y="320">はい</text>
+          <rect class="box" x="300" y="308" width="150" height="40" rx="8"/>
+          <text class="c" x="375" y="333">やり直さない</text>
+
+          <line class="ln" x1="145" y1="348" x2="145" y2="370" marker-end="url(#f3-a)"/>
+          <text class="s" x="153" y="363">いいえ</text>
+          <rect class="q" x="30" y="372" width="230" height="52" rx="20"/>
+          <text class="c" x="145" y="393">ほかのAIの <tspan class="m">claim</tspan> が</text>
+          <text class="c" x="145" y="412">48時間以内にある？</text>
+          <line class="ln" x1="260" y1="398" x2="298" y2="398" marker-end="url(#f3-a)"/>
+          <text class="s c" x="279" y="390">はい</text>
+          <rect class="box" x="300" y="376" width="150" height="44" rx="8"/>
+          <text class="c" x="375" y="395">手を出さない</text>
+          <text class="s c" x="375" y="412">（fyi ログは書ける）</text>
+
+          <line class="ln" x1="145" y1="424" x2="145" y2="446" marker-end="url(#f3-a)"/>
+          <text class="s" x="153" y="439">いいえ</text>
+          <rect class="q" x="30" y="448" width="230" height="52" rx="20"/>
+          <text class="c" x="145" y="469">ほかのAI・あなたへの</text>
+          <text class="c" x="145" y="488"><tspan class="m">hand-off</tspan> がある？</text>
+          <line class="ln" x1="260" y1="474" x2="298" y2="474" marker-end="url(#f3-a)"/>
+          <text class="s c" x="279" y="466">はい</text>
+          <rect class="box" x="300" y="454" width="150" height="40" rx="8"/>
+          <text class="c" x="375" y="479">まかせる</text>
+
+          <line class="ln" x1="145" y1="500" x2="145" y2="522" marker-end="url(#f3-a)"/>
+          <text class="s" x="153" y="515">いいえ</text>
+          <rect class="okbox" x="30" y="524" width="230" height="50" rx="8"/>
+          <text class="h c" x="145" y="546">作業してよい</text>
+          <text class="s c" x="145" y="564">履歴がなければ、元に戻せないことは確認</text>
+
+          <!-- A -> B -->
+          <path class="ln" d="M260,549 H462 V80 H478" marker-end="url(#f3-a)"/>
+          <text class="s c" x="362" y="541">記録するなら</text>
+
+          <!-- B -->
+          <rect class="box" x="480" y="60" width="250" height="40" rx="8"/>
+          <text class="c" x="605" y="85">ログを残したいとき</text>
+          <line class="ln" x1="605" y1="100" x2="605" y2="122" marker-end="url(#f3-a)"/>
+
+          <rect class="q" x="480" y="124" width="250" height="44" rx="20"/>
+          <text class="c" x="605" y="151">(a) 自分の参加記録がある？</text>
+          <line class="ln" x1="730" y1="146" x2="768" y2="146" marker-end="url(#f3-a)"/>
+          <text class="s c" x="749" y="138">いいえ</text>
+          <line class="ln" x1="605" y1="168" x2="605" y2="190" marker-end="url(#f3-a)"/>
+          <text class="s" x="613" y="183">はい</text>
+
+          <rect class="q" x="480" y="192" width="250" height="44" rx="20"/>
+          <text class="c" x="605" y="211">(b) 自分の最新ログから</text>
+          <text class="c" x="605" y="228">30分以上たった？</text>
+          <line class="ln" x1="730" y1="214" x2="768" y2="214" marker-end="url(#f3-a)"/>
+          <text class="s c" x="749" y="206">いいえ</text>
+          <line class="ln" x1="605" y1="236" x2="605" y2="258" marker-end="url(#f3-a)"/>
+          <text class="s" x="613" y="251">はい</text>
+
+          <rect class="q" x="480" y="260" width="250" height="64" rx="20"/>
+          <text class="c" x="605" y="280">(c) 案件が <tspan class="m">closed</tspan> でなく、</text>
+          <text class="c" x="605" y="298">ほかのAIの <tspan class="m">claim</tspan>（48時間以内）もない？</text>
+          <text class="s c" x="605" y="316"><tspan class="m">todo</tspan> は <tspan class="m">claim</tspan> ではない</text>
+          <line class="ln" x1="730" y1="284" x2="768" y2="284" marker-end="url(#f3-a)"/>
+          <text class="s c" x="749" y="276">いいえ</text>
+
+          <rect class="ngbox" x="770" y="124" width="110" height="200" rx="10"/>
+          <text class="h c ngt" x="825" y="206">ログを</text>
+          <text class="h c ngt" x="825" y="226">作らない</text>
+          <text class="s c" x="825" y="252">理由を</text>
+          <text class="s c" x="825" y="269">あなたに伝える</text>
+
+          <line class="ln" x1="605" y1="324" x2="605" y2="346" marker-end="url(#f3-a)"/>
+          <text class="s" x="613" y="339">はい</text>
+          <rect class="trust" x="480" y="348" width="250" height="112" rx="8"/>
+          <text class="h acc" x="496" y="372">新しい下書きを作る</text>
+          <text x="496" y="396">宛先なし・返信にしない</text>
+          <text x="496" y="416"><tspan class="m">case-id</tspan> と件名は既存のまま</text>
+          <text x="496" y="436">送信しない・書きかえない</text>
+
+          <line class="ln" x1="605" y1="460" x2="605" y2="482" marker-end="url(#f3-a)"/>
+          <rect class="box" x="480" y="484" width="250" height="40" rx="8"/>
+          <text class="c" x="605" y="509"><tspan class="m">postbox</tspan> ラベルを付ける（任意）</text>
+</svg>

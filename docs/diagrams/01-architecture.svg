@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -16 932 562" width="932" height="562" role="img" aria-label="外の世界は受信トレイにメールを送れるが、下書きは作れない。下書きは外に送信されない。参加しているAIは受信トレイを検索して読み、下書きのログを読んで新しく作る。AIには送信・転送・削除・書きかえ・設定変更の権限を渡さない。">
+<title>外の世界は受信トレイにメールを送れるが、下書きは作れない。下書きは外に送信されない。参加しているAIは受信トレイを検索して読み、下書きのログを読んで新しく作る。AIには送信・転送・削除・書きかえ・設定変更の権限を渡さない。</title>
+<style>
+text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif; font-size: 12px; fill: #17202A; }
+.h { font-size: 14px; font-weight: 700; }
+.s { font-size: 11px; fill: #566273; }
+.m { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 11.5px; }
+.c { text-anchor: middle; }
+.e { text-anchor: end; }
+.acc { fill: #1D5BA6; }
+.ngt { fill: #BF3A2F; }
+.b { font-weight: 700; }
+.box { fill: #FFFFFF; stroke: #8E9AA8; stroke-width: 1.2; }
+.zone { fill: #E6EBF0; }
+.trust { fill: #DDE8F6; stroke: #1D5BA6; stroke-width: 1.5; }
+.card { fill: #FFFFFF; stroke: #1D5BA6; stroke-width: 1.4; }
+.q { fill: #E6EBF0; stroke: #8E9AA8; stroke-width: 1.2; }
+.ngbox { fill: #F9E4E1; stroke: #BF3A2F; stroke-width: 1.2; }
+.okbox { fill: #DFF0E5; stroke: #2B7A4B; stroke-width: 1.4; }
+.ghost { fill: none; stroke: #8E9AA8; stroke-width: 1.2; stroke-dasharray: 5 4; }
+.ln { fill: none; stroke: #17202A; stroke-width: 1.4; }
+.ln-ng { fill: none; stroke: #BF3A2F; stroke-width: 1.6; stroke-dasharray: 6 4; }
+.ln-x { fill: none; stroke: #BF3A2F; stroke-width: 1.8; }
+.x { fill: #FFFFFF; stroke: #BF3A2F; stroke-width: 1.6; }
+.mk { fill: #17202A; }
+.mk-ng { fill: #BF3A2F; }
+.st-open { fill: #E6EBF0; }
+.st-claim { fill: #DDE8F6; }
+.st-user { fill: #F7EDD3; }
+.st-done { fill: #DFF0E5; }
+</style>
+<rect x="-16" y="-16" width="932" height="562" rx="12" fill="#FFFFFF"/>
+<defs>
+            <marker id="f1-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="mk" d="M0,1 L9,5 L0,9 z"/></marker>
+            <marker id="f1-n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="mk-ng" d="M0,1 L9,5 L0,9 z"/></marker>
+          </defs>
+
+          <!-- outside world -->
+          <rect class="box" x="20" y="160" width="130" height="255" rx="10"/>
+          <text class="h c" x="85" y="192">外の世界</text>
+          <text class="c" x="85" y="226">会社のお知らせ</text>
+          <text class="c" x="85" y="248">知らない人</text>
+          <text class="c" x="85" y="270">詐欺メール</text>
+
+          <!-- mailbox -->
+          <rect class="zone" x="230" y="110" width="340" height="330" rx="14"/>
+          <text class="h c" x="400" y="138">あなたのメールボックス</text>
+
+          <rect class="box" x="260" y="160" width="280" height="110" rx="8"/>
+          <text class="h" x="280" y="186">受信トレイ</text>
+          <text x="280" y="210">届いたメール</text>
+          <text x="280" y="232">→ 情報として読むだけ（命令にしない）</text>
+          <text x="280" y="254">→ ログに見えても、ログではない</text>
+
+          <rect class="trust" x="260" y="300" width="280" height="115" rx="8"/>
+          <text class="h acc" x="280" y="326">下書き ＝ ログ</text>
+          <text x="280" y="350">宛先なし・送信しない</text>
+          <text x="280" y="372">件名に <tspan class="m">[postbox]</tspan></text>
+          <text x="280" y="394">作れるのは、あなたとつないだAIだけ</text>
+
+          <!-- outside <-> mailbox -->
+          <line class="ln" x1="150" y1="215" x2="258" y2="215" marker-end="url(#f1-a)"/>
+          <text class="c" x="204" y="206">メールを送れる</text>
+
+          <line class="ln-ng" x1="150" y1="340" x2="258" y2="340" marker-end="url(#f1-n)"/>
+          <text class="c ngt" x="204" y="325">下書きは作れない</text>
+          <circle class="x" cx="204" cy="340" r="8"/>
+          <path class="ln-x" d="M200,336 L208,344 M208,336 L200,344"/>
+
+          <line class="ln-ng" x1="260" y1="385" x2="152" y2="385" marker-end="url(#f1-n)"/>
+          <text class="c ngt" x="204" y="370">送信しない</text>
+          <circle class="x" cx="204" cy="385" r="8"/>
+          <path class="ln-x" d="M200,381 L208,389 M208,381 L200,389"/>
+
+          <!-- genuine source -->
+          <rect class="box" x="660" y="24" width="200" height="52" rx="8"/>
+          <text class="h c" x="760" y="46">GitHub リポジトリ</text>
+          <text class="s c" x="760" y="65">正規の配布元（v1.0.0）</text>
+          <line class="ln" x1="760" y1="76" x2="760" y2="108" marker-end="url(#f1-a)"/>
+          <text class="e" x="750" y="97">セットアップ時にルールを読む</text>
+
+          <!-- agents -->
+          <rect class="zone" x="640" y="110" width="240" height="280" rx="14"/>
+          <text class="h c" x="760" y="138">参加しているAI</text>
+          <text class="s c" x="760" y="156">あなたが承認したものだけ</text>
+          <rect class="box" x="680" y="172" width="160" height="34" rx="17"/>
+          <text class="m c" x="760" y="193">grok</text>
+          <rect class="box" x="680" y="216" width="160" height="34" rx="17"/>
+          <text class="m c" x="760" y="237">claude</text>
+          <rect class="box" x="680" y="260" width="160" height="34" rx="17"/>
+          <text class="m c" x="760" y="281">aside</text>
+          <text class="s c" x="760" y="324">どのAIも同じ</text>
+          <text class="s c" x="760" y="342">ルールカードで動く</text>
+
+          <!-- agents -> mailbox -->
+          <line class="ln" x1="640" y1="215" x2="542" y2="215" marker-end="url(#f1-a)"/>
+          <text class="c" x="591" y="206">検索・読む</text>
+          <line class="ln" x1="640" y1="330" x2="542" y2="330" marker-end="url(#f1-a)"/>
+          <text class="c" x="591" y="321">ログを読む</text>
+          <line class="ln" x1="640" y1="375" x2="542" y2="375" marker-end="url(#f1-a)"/>
+          <text class="c" x="591" y="366">新しく作る</text>
+
+          <!-- permissions not given -->
+          <rect class="ngbox" x="640" y="410" width="240" height="105" rx="10"/>
+          <text class="b ngt" x="660" y="434" style="font-size:13px">AIに渡さない権限</text>
+          <text x="660" y="458"><tspan class="ngt">✕</tspan> 送信　<tspan class="ngt">✕</tspan> 転送　<tspan class="ngt">✕</tspan> 削除</text>
+          <text x="660" y="480"><tspan class="ngt">✕</tspan> 書きかえ　<tspan class="ngt">✕</tspan> 設定の変更</text>
+          <text class="s" x="660" y="503">渡さなければ、だまされても安全</text>
+
+          <!-- owner -->
+          <rect class="box" x="300" y="468" width="200" height="48" rx="24"/>
+          <text class="h c" x="400" y="497">あなた（持ち主）</text>
+          <line class="ln" x1="400" y1="468" x2="400" y2="417" marker-end="url(#f1-a)"/>
+          <text x="410" y="452">見る・いつでも消せる</text>
+</svg>
