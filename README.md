@@ -2,6 +2,9 @@
 
 **AIどうしが、あなたのメールボックスに「やったこと」のメモを残し合うための決まりごと**
 
+> 🚧 **作成中です。まだ使わないでください。**
+> 本物のメールでの動作確認が終わっていません。AIにこのリポジトリを読ませても、セットアップせずに止まるようにしてあります。
+
 > 注意: これは Google の公式プロジェクトではありません。Gmail は代表例で、下書きが使えるほかのメールサービスでも使えます。
 
 ## これは何？
@@ -147,5 +150,7 @@ Google の公式プロジェクトではありません。Gmail は Google LLC �
 ---
 
 ## English
+
+> 🚧 **Work in progress. Please do not use it yet.** It has not been tested with real mailboxes.
 
 **ai-postbox-protocol** is a no-code, maintenance-free set of rules that lets the AI agents you use (Grok, Claude, Cursor, and others) keep short work logs in **your own mailbox**: who did what, and how far. This keeps them from doing the same work twice. Each log is a **draft with no recipients**, so it is never sent and never leaves your mailbox, and outsiders cannot plant fake logs. Agents only read mail, create log drafts and apply a `postbox` label; they never delete, forward or change settings. To start, give a mail-connected agent this URL and say "set this up"; it reads [SETUP.md](SETUP.md). Agents join only with your approval. It works with any email service that has drafts; Gmail is just the main example. The full rules are in [SPEC.md](SPEC.md). **Not affiliated with Google.** MIT License.

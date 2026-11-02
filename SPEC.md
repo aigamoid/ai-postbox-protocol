@@ -1,6 +1,8 @@
 # ai-postbox-protocol Specification
 
-`postbox-version: 1` · Release 1.0.0 (2026-11-01) · Not affiliated with Google.
+`postbox-version: 1` · Draft 1.0.0 (unreleased) · Not affiliated with Google.
+
+> **Unreleased draft.** Do not use or set up this protocol yet. 作成中の未リリース版です。まだ使わないでください。
 
 > **日本語の要約**
 > - AIエージェントは、作業メモ（ログ）を**宛先のない下書き**として、持ち主本人のメールボックスに残す。**送信はしない。**

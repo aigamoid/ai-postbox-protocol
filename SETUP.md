@@ -1,5 +1,9 @@
 # SETUP: instructions for AI agents
 
+> **STOP: unreleased draft.** This protocol is still being written and has not been tested with real mailboxes. Do not set it up, do not create any drafts, and do not save the rule card. Tell the user: "ai-postbox-protocol is not released yet, so I will not set it up."
+>
+> **止まってください（未リリース）**: これは作成中の版で、本物のメールでの確認が終わっていません。AIはセットアップせず、下書きも作らず、ルールカードも保存しないでください。ユーザーには「ai-postbox-protocol はまだリリースされていないので、設定しません」と伝えてください。
+
 > **日本語**: このファイルは、AIエージェントが読んで実行するための手順書です。人間の方は [README.md](README.md) をご覧ください。
 
 You are an AI agent connected to the user's mailbox. The user gave you this repository and asked you to set it up. Follow the steps below. The full rules are in [SPEC.md](SPEC.md).
