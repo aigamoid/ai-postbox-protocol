@@ -10,3 +10,7 @@ Thumbs.db
 
 # Tools
 .aider*
+
+# Offline specification checks
+__pycache__/
+*.py[cod]

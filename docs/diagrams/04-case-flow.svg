@@ -1,105 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -16 982 342" width="982" height="342" role="img" aria-label="11月2日8時15分、更新案内のメールに気づいた claude が todo を書く。12時、grok が claim を書いて引き受ける。夕方、aside も同じメールに気づくが、grok の claim が48時間以内なので下書きを作らない。11月3日9時40分、grok があなたに hand-off する。あなたが申し込み、11月5日20時10分、更新完了のメールを見た aside が done と closed を書いて案件を閉じる。">
-<title>11月2日8時15分、更新案内のメールに気づいた claude が todo を書く。12時、grok が claim を書いて引き受ける。夕方、aside も同じメールに気づくが、grok の claim が48時間以内なので下書きを作らない。11月3日9時40分、grok があなたに hand-off する。あなたが申し込み、11月5日20時10分、更新完了のメールを見た aside が done と closed を書いて案件を閉じる。</title>
-<style>
-text { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif; font-size: 12px; fill: #17202A; }
-.h { font-size: 14px; font-weight: 700; }
-.s { font-size: 11px; fill: #566273; }
-.m { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 11.5px; }
-.c { text-anchor: middle; }
-.e { text-anchor: end; }
-.acc { fill: #1D5BA6; }
-.ngt { fill: #BF3A2F; }
-.b { font-weight: 700; }
-.box { fill: #FFFFFF; stroke: #8E9AA8; stroke-width: 1.2; }
-.zone { fill: #E6EBF0; }
-.trust { fill: #DDE8F6; stroke: #1D5BA6; stroke-width: 1.5; }
-.card { fill: #FFFFFF; stroke: #1D5BA6; stroke-width: 1.4; }
-.q { fill: #E6EBF0; stroke: #8E9AA8; stroke-width: 1.2; }
-.ngbox { fill: #F9E4E1; stroke: #BF3A2F; stroke-width: 1.2; }
-.okbox { fill: #DFF0E5; stroke: #2B7A4B; stroke-width: 1.4; }
-.ghost { fill: none; stroke: #8E9AA8; stroke-width: 1.2; stroke-dasharray: 5 4; }
-.ln { fill: none; stroke: #17202A; stroke-width: 1.4; }
-.ln-ng { fill: none; stroke: #BF3A2F; stroke-width: 1.6; stroke-dasharray: 6 4; }
-.ln-x { fill: none; stroke: #BF3A2F; stroke-width: 1.8; }
-.x { fill: #FFFFFF; stroke: #BF3A2F; stroke-width: 1.6; }
-.mk { fill: #17202A; }
-.mk-ng { fill: #BF3A2F; }
-.st-open { fill: #E6EBF0; }
-.st-claim { fill: #DDE8F6; }
-.st-user { fill: #F7EDD3; }
-.st-done { fill: #DFF0E5; }
-</style>
-<rect x="-16" y="-16" width="982" height="342" rx="12" fill="#FFFFFF"/>
-<defs>
-            <marker id="f4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="mk" d="M0,1 L9,5 L0,9 z"/></marker>
-          </defs>
-
-          <text class="s" x="12" y="55">案件の状態</text>
-          <text class="s" x="12" y="142">下書き（ログ）</text>
-          <text class="s" x="12" y="278">メール・あなた</text>
-
-          <text class="m s c" x="195" y="24">11/02 08:15</text>
-          <text class="m s c" x="361" y="24">11/02 12:00</text>
-          <text class="m s c" x="527" y="24">11/02 夕方</text>
-          <text class="m s c" x="693" y="24">11/03 09:40</text>
-          <text class="m s c" x="859" y="24">11/05 20:10</text>
-
-          <rect class="st-open" x="112" y="36" width="164" height="28" rx="4"/>
-          <text class="c" x="194" y="55">まだ誰もやっていない</text>
-          <rect class="st-claim" x="280" y="36" width="330" height="28" rx="4"/>
-          <text class="c" x="445" y="55">grok が引き受け中（<tspan class="m">claim</tspan> は48時間有効）</text>
-          <rect class="st-user" x="612" y="36" width="162" height="28" rx="4"/>
-          <text class="c" x="693" y="55">あなたの番</text>
-          <rect class="st-done" x="778" y="36" width="162" height="28" rx="4"/>
-          <text class="c" x="859" y="55"><tspan class="m">closed</tspan>（終わり）</text>
-
-          <rect class="card" x="117" y="88" width="156" height="100" rx="8"/>
-          <text x="129" y="112"><tspan class="b" style="font-size:13px">claude</tspan>  <tspan class="m acc">todo</tspan></text>
-          <text class="m s" x="129" y="131">status: open</text>
-          <text x="129" y="156">やることがある</text>
-          <text x="129" y="174">（自分はやらない）</text>
-
-          <rect class="card" x="283" y="88" width="156" height="100" rx="8"/>
-          <text x="295" y="112"><tspan class="b" style="font-size:13px">grok</tspan>  <tspan class="m acc">claim</tspan></text>
-          <text class="m s" x="295" y="131">status: open</text>
-          <text x="295" y="156">この件を引き受ける</text>
-          <text x="295" y="174">見積もりを比べる</text>
-
-          <rect class="ghost" x="449" y="88" width="156" height="100" rx="8"/>
-          <text class="b s" x="461" y="112" style="font-size:13px">aside</text>
-          <text class="s" x="461" y="131">下書きは作らない</text>
-          <text x="461" y="156">grok の <tspan class="m">claim</tspan> が</text>
-          <text x="461" y="174">48時間以内 → 待つ</text>
-
-          <rect class="card" x="615" y="88" width="156" height="100" rx="8"/>
-          <text x="627" y="112"><tspan class="b" style="font-size:13px">grok</tspan>  <tspan class="m acc">hand-off</tspan></text>
-          <text class="m s" x="627" y="131">status: open</text>
-          <text x="627" y="156">あなたに引き継ぐ</text>
-          <text class="m" x="627" y="174">to-agent: user</text>
-
-          <rect class="card" x="781" y="88" width="156" height="100" rx="8"/>
-          <text x="793" y="112"><tspan class="b" style="font-size:13px">aside</tspan>  <tspan class="m acc">done</tspan></text>
-          <text class="m s" x="793" y="131">status: closed</text>
-          <text x="793" y="156">完了メールを確認</text>
-          <text x="793" y="174">この件は終わり</text>
-
-          <rect class="box" x="117" y="252" width="156" height="44" rx="8"/>
-          <text class="c" x="195" y="279">更新案内のメール</text>
-          <line class="ln" x1="195" y1="252" x2="195" y2="190" marker-end="url(#f4-a)"/>
-          <text class="s" x="203" y="225">気づく</text>
-
-          <rect class="box" x="449" y="252" width="156" height="44" rx="8"/>
-          <text class="c" x="527" y="279">同じメールに気づく</text>
-          <line class="ln" x1="527" y1="252" x2="527" y2="190" marker-end="url(#f4-a)"/>
-          <text class="s" x="535" y="225">ログを確認</text>
-
-          <rect class="box" x="615" y="252" width="156" height="44" rx="8"/>
-          <text class="c" x="693" y="279">あなたが申し込む</text>
-          <line class="ln" x1="693" y1="188" x2="693" y2="250" marker-end="url(#f4-a)"/>
-          <text class="s" x="701" y="225">引き継ぐ</text>
-
-          <rect class="box" x="781" y="252" width="156" height="44" rx="8"/>
-          <text class="c" x="859" y="279">更新完了のメール</text>
-          <line class="ln" x1="859" y1="252" x2="859" y2="190" marker-end="url(#f4-a)"/>
-          <text class="s" x="867" y="225">確認</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 610" width="1080" height="610" role="img" aria-labelledby="title desc">
+<title id="title">1つの案件の流れ</title>
+<desc id="desc">claudeがtodo、grokがclaimを書いて再検索。asideは現在のclaimを見て重複作業をしないが新情報fyiは可能。grokがuserへhand-offしてclaimを解放。完了メールを確認しdone closedを記録。新事実なら再開できる。</desc>
+<style>text { font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; font-size: 14px; fill: #17202A; }
+.title { font-size: 22px; font-weight: 700; } .h { font-size: 16px; font-weight: 700; }
+.s { font-size: 12px; fill: #526173; } .blue { fill: #1D5BA6; } .red { fill: #A43229; }
+.box { fill: #F5F7FA; stroke: #8E9AA8; stroke-width: 1.2; }
+.trust { fill: #E8F0FA; stroke: #1D5BA6; stroke-width: 1.4; }
+.warn { fill: #FFF2EE; stroke: #BE4E3B; stroke-width: 1.2; }
+.good { fill: #EAF5EE; stroke: #397A50; stroke-width: 1.2; }
+.line { fill: none; stroke: #526173; stroke-width: 1.5; }</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#526173"/></marker></defs>
+<rect width="1080" height="610" rx="12" fill="white"/>
+<text x="30" y="44" class="title">1つの案件の流れ：保険の更新</text>
+<text x="30" y="72" class="s">各列は同じcase-idの独立した下書き。時刻の間隔は縮尺どおりではありません。</text>
+<text x="120" y="113" class="s" text-anchor="middle">11/02 08:15</text>
+<rect x="30" y="132" width="180" height="150" rx="10" class="trust"/>
+<text x="48" y="161" class="h">claude：todo</text>
+<text x="48" y="187" class="">更新が必要と記録</text>
+<text x="48" y="210" class="">まだ担当者はいない</text>
+<text x="48" y="233" class="">status: open</text>
+<text x="330" y="113" class="s" text-anchor="middle">11/02 12:00</text>
+<rect x="240" y="132" width="180" height="150" rx="10" class="trust"/>
+<text x="258" y="161" class="h">grok：claim</text>
+<text x="258" y="187" class="">担当を宣言する</text>
+<text x="258" y="210" class="">書いた後に再検索</text>
+<text x="258" y="233" class="">status: open</text>
+<text x="540" y="113" class="s" text-anchor="middle">11/02 夕方</text>
+<rect x="450" y="132" width="180" height="150" rx="10" class="box"/>
+<text x="468" y="161" class="h">aside：確認</text>
+<text x="468" y="187" class="">grokが担当中</text>
+<text x="468" y="210" class="">同じ仕事はしない</text>
+<text x="468" y="233" class="">新情報fyiは可</text>
+<text x="750" y="113" class="s" text-anchor="middle">11/03 09:40</text>
+<rect x="660" y="132" width="180" height="150" rx="10" class="trust"/>
+<text x="678" y="161" class="h">grok：hand-off</text>
+<text x="678" y="187" class="">持ち主へ引き継ぐ</text>
+<text x="678" y="210" class="">grokのclaimを解放</text>
+<text x="678" y="233" class="">to-agent: user</text>
+<text x="960" y="113" class="s" text-anchor="middle">11/05 20:10</text>
+<rect x="870" y="132" width="180" height="150" rx="10" class="trust"/>
+<text x="888" y="161" class="h">aside：done</text>
+<text x="888" y="187" class="">完了メールを確認</text>
+<text x="888" y="210" class="">完了を記録する</text>
+<text x="888" y="233" class="">status: closed</text>
+<path class="line" d="M210,207 L238,207" marker-end="url(#arrow)"/>
+<path class="line" d="M420,207 L448,207" marker-end="url(#arrow)"/>
+<path class="line" d="M630,207 L658,207" marker-end="url(#arrow)"/>
+<path class="line" d="M840,207 L868,207" marker-end="url(#arrow)"/>
+<rect x="30" y="332" width="180" height="86" rx="10" class="box"/>
+<text x="48" y="361" class="h">元のメール</text>
+<text x="48" y="387" class="">更新案内を受信</text>
+<rect x="450" y="332" width="180" height="86" rx="10" class="box"/>
+<text x="468" y="361" class="h">元のメール</text>
+<text x="468" y="387" class="">同じ案内に気づく</text>
+<rect x="660" y="332" width="180" height="86" rx="10" class="box"/>
+<text x="678" y="361" class="h">持ち主の作業</text>
+<text x="678" y="387" class="">本人が申し込む</text>
+<rect x="870" y="332" width="180" height="86" rx="10" class="box"/>
+<text x="888" y="361" class="h">元のメール</text>
+<text x="888" y="387" class="">更新完了を受信</text>
+<path class="line" d="M120,332 L120,285" marker-end="url(#arrow)"/>
+<path class="line" d="M540,332 L540,285" marker-end="url(#arrow)"/>
+<path class="line" d="M750,282 L750,329" marker-end="url(#arrow)"/>
+<path class="line" d="M960,332 L960,285" marker-end="url(#arrow)"/>
+<rect x="30" y="454" width="1020" height="124" rx="10" class="box"/>
+<text x="48" y="483" class="h">記録と担当は別の状態</text>
+<text x="48" y="509" class="">担当は現在の有効なclaimで判定します。古いclaimや、旧担当者の後日のfyiでは復活しません。</text>
+<text x="48" y="532" class="">closedでも、新しい事実があれば再開できます。訂正・まとめ・新情報の記録まで止めません。</text>
+<text x="48" y="555" class="">並行作業の防止は最善努力です。二重実行できない処理には別の排他・冪等性の対策が必要です。</text>
 </svg>
